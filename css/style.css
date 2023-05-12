@@ -24,13 +24,13 @@ Generals
 
 main {
   width: 100%;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 7rem);
   background-color: black;
   overflow-x: hidden;
 }
 
 footer {
-  height: 10rem;
+  height: 7rem;
 }
 
 .my-row {
@@ -44,6 +44,18 @@ footer {
 
 main img {
   width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+button,
+.top-element button {
+  transition: background 500ms ease;
 }
 
 /*-----------
@@ -67,7 +79,7 @@ main .container {
   z-index: 10;
 }
 
-.top-element span {
+.top-element button {
   background-color: #4a4a4a;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -78,7 +90,7 @@ main .container {
   text-transform: capitalize;
 }
 
-.top-element span:nth-child(1) i {
+.top-element button:nth-child(1) i {
   font-size: 1.6rem;
   vertical-align: middle;
   display: inline-block;
@@ -104,7 +116,7 @@ main .container .col-1-7 {
   background-image: url("https://picsum.photos/200/300");
   background-position: center;
   background-size: cover;
-  height: calc((100vh - 26rem) / 5);
+  height: calc((100vh - 24rem) / 5);
   position: relative;
 }
 
@@ -135,8 +147,25 @@ footer .buttons-group {
   justify-content: space-between;
 }
 
+footer .buttons-group button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+footer .buttons-group:first-of-type {
+  padding-inline: 1rem;
+}
+
 footer .buttons-group .volume {
   margin-right: 1rem;
+}
+
+footer .buttons-group.medle button {
+  margin-right: 1rem;
+}
+
+footer .buttons-group.medle button.green i {
+  color: green;
 }
 
 footer .end {
@@ -147,6 +176,45 @@ footer .end {
   height: 100%;
   background-color: #4a4a4a;
   color: red;
+  cursor: pointer;
+  transition: background-color 500ms ease;
+}
+
+footer button span {
+  text-transform: capitalize;
+}
+
+footer button i {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+footer button.action i {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/*----------
+sections hover/ animations
+------------*/
+button:hover,
+.top-element button:hover {
+  background-color: #646464;
+}
+
+.col-1-7.card .cam-name {
+  transition: all 500ms ease;
+}
+
+.col-1-7.card:hover .cam-name {
+  padding-left: 1rem;
+  transform: scale(120%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer .end:hover {
+  background-color: #6d6c6c;
 }
 
 /*-------debug--------*/
@@ -162,7 +230,11 @@ footer .end {
 /* .debug main .my-row > * {
   background-color: aqua;
 } */
-
+/* 
 .debug footer > * {
   border: 1px solid red;
 }
+
+.debug footer button {
+  border: 1px solid blue;
+} */

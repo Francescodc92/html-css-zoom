@@ -18,15 +18,15 @@
   </head>
   <body class="debug">
     <main>
-      <p class="top-element">
-        <span>
+      <div class="top-element">
+        <button>
           <i class="fa-solid fa-table-cells"></i>
           speaker view
-        </span>
-        <span>
+        </button>
+        <button>
           <i class="fa-solid fa-maximize"></i>
-        </span>
-      </p>
+        </button>
+      </div>
       <!--end top element-->
       <div class="container">
         <section class="my-row cams">
@@ -353,18 +353,68 @@
     <!--end main-->
     <footer>
       <div class="buttons-group">
-        <div class="volume">b1 b2</div>
-        <div class="video">b1 b2</div>
+        <div class="volume">
+          <button class="action">
+            <i class="fa-solid fa-microphone"></i>
+            <span>mute</span>
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="video">
+          <button class="action">
+            <i class="fa-solid fa-video"></i>
+            <span>stop video </span>
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
       </div>
       <!--buttons grounp-->
       <div class="buttons-group medle">
-        b1 b2 b3 b4
-        <div class="chat">b5 b6</div>
-        b7 b8 b9
+        <button class="action">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>invite</span>
+        </button>
+        <button class="action">
+          <i class="fa-solid fa-user-group"></i>
+          <span>manege participants</span>
+        </button>
+        <button class="action">
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>polling</span>
+        </button>
+        <button class="action green">
+          <i class="fa-solid fa-share-from-square"></i>
+          <span>share Screen</span>
+        </button>
+        <div class="chat">
+          <button>
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <button class="action">
+            <i class="fa-solid fa-comment"></i>
+            <span>chat</span>
+          </button>
+        </div>
+        <button class="action">
+          <i class="fa-solid fa-record-vinyl"></i>
+          <span>Record</span>
+        </button>
+        <button class="action">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>breakout rooms</span>
+        </button>
+        <button class="action">
+          <i class="fa-solid fa-ellipsis"></i>
+          <span>more</span>
+        </button>
       </div>
       <!--buttons grounp-->
 
-      <div class="end">end meeting</div>
+      <div class="end">End meeting</div>
     </footer>
     <!--end footer-->
   </body>
