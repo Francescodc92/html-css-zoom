@@ -1,3 +1,7 @@
+/*---------
+Reset
+---------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +16,93 @@
 
 body {
   font-size: 1.6rem;
+}
+
+/*---------
+Generals
+---------*/
+
+main {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  background-color: black;
+}
+
+footer {
+  height: 12rem;
+}
+
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1-7 {
+  width: calc(100% / 7);
+}
+/*-----------
+main
+-----------*/
+main .container {
+  max-width: 120rem;
+  margin-inline: auto;
+  height: 100%;
+  padding: 8rem 0 5rem 0;
+  position: relative;
+}
+
+.top-element {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  color: #fff;
+}
+
+.top-element > * {
+  background-color: #4a4a4a;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/*-----------
+Cams Section
+------------*/
+main .container .my-row {
+  margin-inline: -0.5rem;
+}
+
+main .container .col-1-7 {
+  width: calc((100% / 7) - 1rem);
+}
+
+.card {
+  margin: 1rem 0.5rem;
+}
+.cam-container {
+  height: calc((100vh - 26rem) / 5);
+  position: relative;
+}
+
+.cam-container .cam-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: capitalize;
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*-------debug--------*/
+
+.debug .container {
+  border: 1px solid red;
+  color: #fff;
+}
+
+.debug .my-row {
+  border: 1px solid blue;
+}
+
+.debug .my-row > * {
+  background-color: aqua;
 }
