@@ -24,12 +24,13 @@ Generals
 
 main {
   width: 100%;
-  height: calc(100vh - 12rem);
+  height: calc(100vh - 10rem);
   background-color: black;
+  overflow-x: hidden;
 }
 
 footer {
-  height: 12rem;
+  height: 10rem;
 }
 
 .my-row {
@@ -88,7 +89,7 @@ main .container {
 Cams Section
 ------------*/
 main .container .my-row {
-  margin-top: -1.5rem;
+  margin-inline: -1rem;
   margin-inline: -0.5rem;
 }
 
@@ -103,7 +104,7 @@ main .container .col-1-7 {
   background-image: url("https://picsum.photos/200/300");
   background-position: center;
   background-size: cover;
-  height: calc((100vh - (26rem + 2rem)) / 5);
+  height: calc((100vh - 26rem) / 5);
   position: relative;
 }
 
@@ -115,6 +116,37 @@ main .container .col-1-7 {
   font-size: 1.2rem;
   padding: 0.3rem;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*----------
+Footer
+-----------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  color: #fff;
+}
+
+footer .buttons-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .buttons-group .volume {
+  margin-right: 1rem;
+}
+
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  height: 100%;
+  background-color: #4a4a4a;
+  color: red;
 }
 
 /*-------debug--------*/
@@ -130,3 +162,7 @@ main .container .col-1-7 {
 /* .debug main .my-row > * {
   background-color: aqua;
 } */
+
+.debug footer > * {
+  border: 1px solid red;
+}
