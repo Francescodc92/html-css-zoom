@@ -40,6 +40,11 @@ footer {
 .col-1-7 {
   width: calc(100% / 7);
 }
+
+main img {
+  width: 100%;
+}
+
 /*-----------
 main
 -----------*/
@@ -47,8 +52,9 @@ main .container {
   max-width: 120rem;
   margin-inline: auto;
   height: 100%;
-  padding: 8rem 0 5rem 0;
   position: relative;
+  color: #fff;
+  padding-top: 6rem;
 }
 
 .top-element {
@@ -56,18 +62,33 @@ main .container {
   top: 1rem;
   right: 0;
   color: #fff;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.top-element > * {
+.top-element span {
   background-color: #4a4a4a;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  line-height: 2rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.top-element span:nth-child(1) i {
+  font-size: 1.6rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.3rem;
 }
 
 /*-----------
 Cams Section
 ------------*/
 main .container .my-row {
+  margin-top: -1.5rem;
   margin-inline: -0.5rem;
 }
 
@@ -79,7 +100,10 @@ main .container .col-1-7 {
   margin: 1rem 0.5rem;
 }
 .cam-container {
-  height: calc((100vh - 26rem) / 5);
+  background-image: url("https://picsum.photos/200/300");
+  background-position: center;
+  background-size: cover;
+  height: calc((100vh - (26rem + 2rem)) / 5);
   position: relative;
 }
 
@@ -88,21 +112,21 @@ main .container .col-1-7 {
   bottom: 0;
   left: 0;
   text-transform: capitalize;
+  font-size: 1.2rem;
   padding: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*-------debug--------*/
 
-.debug .container {
+/* .debug main .container {
   border: 1px solid red;
-  color: #fff;
-}
+} */
 
-.debug .my-row {
+/* .debug main .my-row {
   border: 1px solid blue;
-}
+} */
 
-.debug .my-row > * {
+/* .debug main .my-row > * {
   background-color: aqua;
-}
+} */
